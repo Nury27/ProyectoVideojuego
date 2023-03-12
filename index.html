@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+    <title>Jueguito</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
+<body>
+        <!-- =============CABECERA==================== -->
+    <Header>
+        <img src="./Multimedia/PortadaVideojuego.png" alt="xd" width="300">
+    </Header>
+
+        <!-- =============USER FORM==================== -->
+
+    <main>
+        <form action="game.html" id="formEntry">
+            <div>
+                <p id="error"></p>
+            </div>
+            <div class="itemForm">
+                <label for="nick">Choose your nick</label >
+                <input type="text" name="nick" value="@" id="nicka" readonly>
+                <input type="text" name="nick" id="nick" required>
+            </div>
+            <div class="itemForm">
+                <label for="email">Type your email</label >
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="itemForm">
+                <label for="size">Game's size</label>
+                <select name="size" id="size">
+                    <option value="0">--Please choose an option--</option>
+                    <option value="4">4x4</option>
+                    <option value="5">5x5</option>
+                    <option value="6">6x6</option>
+                </select>
+            </div>
+            <div class="itemForm">
+                <div id="avatar">
+                    <label for="avatar">Avatar</label>
+                    <div id="avatarContainer">
+                        <img src="./Multimedia/avatar1.png" alt="" id="avatarImg">
+                    </div>
+                </div>
+                <div id="avatarGrid">
+                    <div class="avatarItem">
+                        <img src="./Multimedia/avatar1.png" class="avatarImgItem" alt="" width="35" draggable="true">
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./Multimedia/avatar2.png" class="avatarImgItem" alt="" width="35" draggable="true">
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./Multimedia/avatar3.png" class="avatarImgItem" alt="" width="35" draggable="true">
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./Multimedia/avatar4.png" class="avatarImgItem" alt="" width="35" draggable="true">
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./Multimedia/avatar5.png" class="avatarImgItem" alt="" width="35" draggable="true">
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./Multimedia/avatar6.png" class="avatarImgItem" alt="" width="35" draggable="true">
+                    </div>
+                </div>
+            <div class="itemForm">
+                <input type="submit" value="PLAY" id="play">
+            </div>
+            </div>
+        </form>
+    </main>
+
+        <!-- =============FOOTER==================== -->
+
+    <footer>
+        <p>Practising frontend JS</p>
+    </footer>   
+        <!-- =============JS SCRIPTS==================== -->
+        <script src="./JS/userData.js"></script>
+        <script src="./JS/app.js"></script>
+</body>
+</html>
